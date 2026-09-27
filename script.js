@@ -134,12 +134,30 @@ navMenuToggle.addEventListener('click', () => {
   siteNav.classList.toggle('is-open', !isExpanded);
 });
 
+function focusNameInput(event) {
+  event.preventDefault();
+  const nameInput = document.getElementById('name');
+  history.replaceState(null, '', '#name');
+  nameInput.scrollIntoView({ behavior: 'instant', block: 'center' });
+  setTimeout(() => nameInput.focus({ preventScroll: true }), 0);
+}
+
 siteNav.querySelectorAll('a').forEach((link) => {
-  link.addEventListener('click', () => {
+  link.addEventListener('click', (event) => {
     siteNav.classList.remove('is-open');
     navMenuToggle.setAttribute('aria-expanded', 'false');
     navMenuToggle.setAttribute('aria-label', 'Open navigation menu');
+
+    if (link.hash === '#name') {
+      focusNameInput(event);
+    }
   });
+});
+
+document.querySelectorAll('a[href="#name"]').forEach((link) => {
+  if (!siteNav.contains(link)) {
+    link.addEventListener('click', focusNameInput);
+  }
 });
 
 offerTrigger.addEventListener('click', () => {
@@ -291,7 +309,9 @@ actionButtons.forEach((button) => {
     populateServices(category);
     serviceSelect.value = service;
     updateSummary();
-    document.getElementById('booking').scrollIntoView({ behavior: 'smooth' });
+    const nameInput = document.getElementById('name');
+    nameInput.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    nameInput.focus({ preventScroll: true });
   });
 });
 
