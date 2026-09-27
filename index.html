@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trend & Tresses Salon | Booking</title>
+    <meta
+      name="description"
+      content="Professional salon booking website for hair, skin, nail, and waxing services. Book online and send details directly to WhatsApp."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav-wrap">
+        <div class="brand">
+          <img src="logo.png" alt="Trend & Tresses Salon logo" class="brand-logo" />
+          <div>
+            <strong>Trend & Tresses</strong>
+            <small>Unisex Salon</small>
+          </div>
+        </div>
+        <button class="nav-menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Open navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav id="site-nav" class="nav">
+          <a href="#services">Services</a>
+          <a href="#booking">Book</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#contact">Contact</a>
+          <button class="nav-offer-trigger" type="button" aria-controls="special-offer" aria-expanded="false">Special Offer</button>
+        </nav>
+        <a class="btn btn-primary" href="#booking">Book Appointment</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow">Premium salon care</span>
+            <h1>Style, glow, and confidence in one visit.</h1>
+            <p>
+              From hair styling to skin treatments and wax rituals, we deliver modern,
+              premium salon experiences in a calm, professional environment.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#booking">Book now</a>
+              <a class="btn btn-secondary" href="tel:+919038440194">Call salon</a>
+            </div>
+            <div class="stats">
+              <div>
+                <strong>4.9/5</strong>
+                <span>Client rating</span>
+              </div>
+              <div>
+                <strong>2000+</strong>
+                <span>Happy clients</span>
+              </div>
+              <div>
+                <strong>8 yrs</strong>
+                <span>Beauty expertise</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-card">
+            <div class="card-badge">Today's spotlight</div>
+            <h3>Signature Salon Package</h3>
+            <ul>
+              <li>Haircut + wash + styling</li>
+              <li>Beard shaping or facial</li>
+              <li>Premium care & finish</li>
+            </ul>
+            <div class="package-row">
+              <span>From</span>
+              <strong>₹1,499</strong>
+            </div>
+            <button class="btn btn-primary full-width" data-service="Haircut + wash" data-category="Men's">
+              Select package
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="special-offer" class="special-offer-section" hidden>
+        <div class="container">
+          <div class="special-offer-heading">
+            <h2>Special Offer</h2>
+            <button class="special-offer-close" type="button" aria-label="Close special offer">Close</button>
+          </div>
+          <img src="s.png" alt="Trend & Tresses Salon special offer" class="special-offer-image" />
+        </div>
+      </section>
+
+      <section class="trust-bar">
+        <div class="container trust-grid">
+          <div>Expert stylists</div>
+          <div>Hygienic treatment</div>
+          <div>Top-rated care</div>
+          <div>Fast WhatsApp booking</div>
+        </div>
+      </section>
+
+      <section id="services" class="services section-shell">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">Our services</span>
+            <h2>Beauty and grooming services made for every style</h2>
+          </div>
+
+          <div class="service-groups">
+            <article class="service-group">
+              <h3>Men's</h3>
+              <div class="service-list">
+                <div class="service-card" data-category="Men's" data-service="Haircut + wash" data-price="499">
+                  <div>
+                    <h4>Haircut + wash</h4>
+                    <p>Fresh cut and cleansing finish</p>
+                  </div>
+                  <div class="service-meta">
+                    <strong>₹499</strong>
+                    <button>Book</button>
+                  </div>
+                </div>
+                <div class="service-card" data-category="Men's" data-service="Haircut + beard + wash" data-price="599">
+                  <div>
+                    <h4>Haircut + beard + wash</h4>
+                    <p>Complete grooming package</p>
+                  </div>
+                  <div class="service-meta">
+                    <strong>₹599</strong>
+                    <button>Book</button>
+                  </div>
+                </div>
+                <div class="service-card" data-category="Men's" data-service="Cleanshave" data-price="149">
+                  <div>
+                    <h4>Cleanshave</h4>
+                    <p>Sharp finish and smooth skin</p>
+                  </div>
+                  <div class="service-meta">
+                    <strong>₹149</strong>
+                    <button>Book</button>
+                  </div>
+                </div>
+                <div class="service-card" data-category="Men's" data-service="Beard trim" data-price="149">
+                  <div>
+                    <h4>Beard Trim</h4>
+                    <p>Clean and shaped beard</p>
+                  </div>
+                  <div class="service-meta">
+                    <strong>₹149</strong>
+                    <button>Book</button>
+                  </div>
+                </div>
+                <div class="service-card" data-category="Men's" data-service="Hair styling" data-price="499">
+                  <div>
+                    <h4>Hair styling</h4>
+                    <p>Style your look with precision</p>
+                  </div>
+                  <div class="service-meta">
+                    <strong>₹499</strong>
+                    <button>Book</button>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="service-group">
+              <h3>Women's</h3>
+              <div class="service-list">
+                <div class="service-card" data-category="Women's" data-service="Bob cut" data-price="799">
+                  <div>
+                    <h4>Bob cut</h4>
+                    <p>Classic, sleek silhouette</p>
+                  </div>
+                  <div class="service-meta">
+                    <strong>₹799</strong>
+                    <button>Book</button>
+                  </div>
+                </div>
+                <div class="service-card" data-category="Women's" data-service="Layer cut" data-price="799">
+                  <div>
+                    <h4>Layer cut</h4>
+                    <p>Light movement and volume</p>
+                  </div>
+                  <div class="service-meta">
+                    <strong>₹799</strong>
+                    <button>Book</button>
+                  </div>
+                </div>
+                <div class="service-card" data-category="Women's" data-service="Ironing" data-price="799">
+                  <div>
+                    <h4>Ironing</h4>
+                    <p>Smooth and polished finish</p>
+                  </div>
+                  <div class="service-meta">
+                    <strong>₹799</strong>
+                    <button>Book</button>
+                  </div>
+                </div>
+                <div class="service-card" data-category="Women's" data-service="Crimping" data-price="699">
+                  <div>
+                    <h4>Crimping</h4>
+                    <p>Textured style with volume</p>
+                  </div>
+                  <div class="service-meta">
+                    <strong>₹699</strong>
+                    <button>Book</button>
+                  </div>
+                </div>
+                <div class="service-card" data-category="Women's" data-service="Wavy cut (curly hair)" data-price="699">
+                  <div>
+                    <h4>Wavy cut (curly hair)</h4>
+                    <p>Defined waves and shape</p>
+                  </div>
+                  <div class="service-meta">
+                    <strong>₹699</strong>
+                    <button>Book</button>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="service-group">
+              <h3>Hair colour & treatments</h3>
+              <div class="service-list">
+                <div class="service-card" data-category="Hair colour & treatments" data-service="Global hair colour" data-price="1999">
+                  <div>
+                    <h4>Global hair colour</h4>
+                    <p>Rich tone and shine</p>
+                  </div>
+                  <div class="service-meta">
+                    <strong>₹1,999</strong>
+                    <button>Book</button>
+                  </div>
+                </div>
+                <div class="service-card" data-category="Hair colour & treatments" data-service="Balayage hair colour" data-price="4999">
+                  <div>
+                    <h4>Balayage hair colour</h4>
+                    <p>Soft blended dimension</p>
+                  </div>
+                  <div class="service-meta">
+                    <strong>₹4,999</strong>
+                    <button>Book</button>
+                  </div>
+                </div>
+                <div class="service-card" data-category="Hair colour & treatments" data-service="Keratin treatment" data-price="2999">
+                  <div>
+                    <h4>Keratin treatment</h4>
+                    <p>Smooth, sleek finish</p>
+                  </div>
+                  <div class="service-meta">
+                    <strong>₹2,999</strong>
+                    <button>Book</button>
+                  </div>
+                </div>
+                <div class="service-card" data-category="Hair colour & treatments" data-service="Botox treatment" data-price="4999">
+                  <div>
+                    <h4>Botox treatment</h4>
+                    <p>Repair and nourishment</p>
+                  </div>
+                  <div class="service-meta">
+                    <strong>₹4,999</strong>
+                    <button>Book</button>
+                  </div>
+                </div>
+                <div class="service-card" data-category="Hair colour & treatments" data-service="Hair regrowth treatment" data-price="1999">
+                  <div>
+                    <h4>Hair regrowth treatment</h4>
+                    <p>Scalp care and growth support</p>
+                  </div>
+                  <div class="service-meta">
+                    <strong>₹1,999</strong>
+                    <button>Book</button>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="service-group">
+              <h3>Hair wash & spa</h3>
+              <div class="service-list">
+                <div class="service-card" data-category="Hair wash & spa" data-service="Normal hair spa" data-price="999">
+                  <div>
+                    <h4>Normal hair spa</h4>
+                    <p>Deep conditioning care</p>
+                  </div>
+                  <div class="service-meta">
+                    <strong>₹999</strong>
+                    <button>Book</button>
+                  </div>
+                </div>
+                <div class="service-card" data-category="Hair wash & spa" data-service="Botox spa" data-price="1999">
+                  <div>
+                    <h4>Botox spa</h4>
+                    <p>Hydration and repair</p>
+                  </div>
+                  <div class="service-meta">
+                    <strong>₹1,999</strong>
+                    <button>Book</button>
+                  </div>
+                </div>
+                <div class="service-card" data-category="Hair wash & spa" data-service="Keratin spa" data-price="1499">
+                  <div>
+                    <h4>Keratin spa</h4>
+                    <p>Frizz control and shine</p>
+                  </div>
+                  <div class="service-meta">
+                    <strong>₹1,499</strong>
+                    <button>Book</button>
+                  </div>
+                </div>
+                <div class="service-card" data-category="Hair wash & spa" data-service="Anti hairfall spa" data-price="1499">
+                  <div>
+                    <h4>Anti hairfall spa</h4>
+                    <p>Root care for stronger hair</p>
+                  </div>
+                  <div class="service-meta">
+                    <strong>₹1,499</strong>
+                    <button>Book</button>
+                  </div>
+                </div>
+                <div class="service-card" data-category="Hair wash & spa" data-service="Almond oil head massage" data-price="599">
+                  <div>
+                    <h4>Almond oil head massage</h4>
+                    <p>Relaxing scalp therapy</p>
+                  </div>
+                  <div class="service-meta">
+                    <strong>₹599</strong>
+                    <button>Book</button>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="service-group">
+              <h3>Skin</h3>
+              <div class="service-list">
+                <div class="service-card" data-category="Skin" data-service="Acne Treatment" data-price="1999">
+                  <div>
+                    <h4>Acne treatment</h4>
+                    <p>Targeted care for problem skin</p>
+                  </div>
+                  <div class="service-meta">
+                    <strong>₹1,999</strong>
+                    <button>Book</button>
+                  </div>
+                </div>
+                <div class="service-card" data-category="Skin" data-service="Hydra Facial" data-price="1999">
+                  <div>
+                    <h4>Hydra facial</h4>
+                    <p>Hydration and glow boost</p>
+                  </div>
+                  <div class="service-meta">
+                    <strong>₹1,999</strong>
+                    <button>Book</button>
+                  </div>
+                </div>
+                <div class="service-card" data-category="Skin" data-service="Fruit facial" data-price="499">
+                  <div>
+                    <h4>Fruit facial</h4>
+                    <p>Fresh and natural glow</p>
+                  </div>
+                  <div class="service-meta">
+                    <strong>₹499</strong>
+                    <button>Book</button>
+                  </div>
+                </div>
+                <div class="service-card" data-category="Skin" data-service="Pedicure" data-price="999">
+                  <div>
+                    <h4>Pedicure</h4>
+                    <p>Soft, polished feet</p>
+                  </div>
+                  <div class="service-meta">
+                    <strong>₹999</strong>
+                    <button>Book</button>
+                  </div>
+                </div>
+                <div class="service-card" data-category="Skin" data-service="Clean up" data-price="349">
+                  <div>
+                    <h4>Clean up</h4>
+                    <p>Skin refresh and clarity</p>
+                  </div>
+                  <div class="service-meta">
+                    <strong>₹349</strong>
+                    <button>Book</button>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="service-group">
+              <h3>Nail</h3>
+              <div class="service-list">
+                <div class="service-card" data-category="Nail" data-service="Nail extension" data-price="999">
+                  <div>
+                    <h4>Nail extension</h4>
+                    <p>Elegant long-lasting nails</p>
+                  </div>
+                  <div class="service-meta">
+                    <strong>₹999</strong>
+                    <button>Book</button>
+                  </div>
+                </div>
+                <div class="service-card" data-category="Nail" data-service="Gel polish" data-price="599">
+                  <div>
+                    <h4>Gel polish</h4>
+                    <p>Glossy, durable finish</p>
+                  </div>
+                  <div class="service-meta">
+                    <strong>₹599</strong>
+                    <button>Book</button>
+                  </div>
+                </div>
+                <div class="service-card" data-category="Nail" data-service="Nail art" data-price="999">
+                  <div>
+                    <h4>Nail art</h4>
+                    <p>Custom design details</p>
+                  </div>
+                  <div class="service-meta">
+                    <strong>₹999</strong>
+                    <button>Book</button>
+                  </div>
+                </div>
+                <div class="service-card" data-category="Nail" data-service="Chrome" data-price="599">
+                  <div>
+                    <h4>Chrome</h4>
+                    <p>Metallic shine finish</p>
+                  </div>
+                  <div class="service-meta">
+                    <strong>₹599</strong>
+                    <button>Book</button>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="service-group">
+              <h3>Aesthetic treatments</h3>
+              <div class="service-list">
+                <div class="service-card" data-category="Aesthetic treatments" data-service="Microblading" data-price="9999">
+                  <div>
+                    <h4>Microblading</h4>
+                    <p>Natural eyebrow detailing</p>
+                  </div>
+                  <div class="service-meta">
+                    <strong>₹9,999</strong>
+                    <button>Book</button>
+                  </div>
+                </div>
+                <div class="service-card" data-category="Aesthetic treatments" data-service="BB Glow treatment" data-price="9999">
+                  <div>
+                    <h4>BB Glow treatment</h4>
+                    <p>Soft radiant finishing</p>
+                  </div>
+                  <div class="service-meta">
+                    <strong>₹9,999</strong>
+                    <button>Book</button>
+                  </div>
+                </div>
+                <div class="service-card" data-category="Aesthetic treatments" data-service="Mole removal" data-price="499">
+                  <div>
+                    <h4>Mole removal</h4>
+                    <p>Safe and expert removal</p>
+                  </div>
+                  <div class="service-meta">
+                    <strong>₹499</strong>
+                    <button>Book</button>
+                  </div>
+                </div>
+                <div class="service-card" data-category="Aesthetic treatments" data-service="Eyelash extension" data-price="1999">
+                  <div>
+                    <h4>Eyelash extension</h4>
+                    <p>Voluminous eye definition</p>
+                  </div>
+                  <div class="service-meta">
+                    <strong>₹1,999</strong>
+                    <button>Book</button>
+                  </div>
+                </div>
+                <div class="service-card" data-category="Aesthetic treatments" data-service="Body polishing" data-price="2999">
+                  <div>
+                    <h4>Body polishing</h4>
+                    <p>Skin smoothing ritual</p>
+                  </div>
+                  <div class="service-meta">
+                    <strong>₹2,999</strong>
+                    <button>Book</button>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="service-group">
+              <h3>Wax</h3>
+              <div class="service-list">
+                <div class="service-card" data-category="Wax" data-service="Full hand" data-price="499">
+                  <div>
+                    <h4>Full hand</h4>
+                    <p>Normal / Rica / Brazilian options</p>
+                  </div>
+                  <div class="service-meta">
+                    <strong>₹499</strong>
+                    <button>Book</button>
+                  </div>
+                </div>
+                <div class="service-card" data-category="Wax" data-service="Half hand" data-price="299">
+                  <div>
+                    <h4>Half hand</h4>
+                    <p>Quick and comfortable removal</p>
+                  </div>
+                  <div class="service-meta">
+                    <strong>₹299</strong>
+                    <button>Book</button>
+                  </div>
+                </div>
+                <div class="service-card" data-category="Wax" data-service="Full leg" data-price="799">
+                  <div>
+                    <h4>Full leg</h4>
+                    <p>Complete leg finish</p>
+                  </div>
+                  <div class="service-meta">
+                    <strong>₹799</strong>
+                    <button>Book</button>
+                  </div>
+                </div>
+                <div class="service-card" data-category="Wax" data-service="Under arm" data-price="99">
+                  <div>
+                    <h4>Under arm</h4>
+                    <p>Precise and clean result</p>
+                  </div>
+                  <div class="service-meta">
+                    <strong>₹99</strong>
+                    <button>Book</button>
+                  </div>
+                </div>
+                <div class="service-card" data-category="Wax" data-service="Full body" data-price="1499">
+                  <div>
+                    <h4>Full body</h4>
+                    <p>Complete grooming session</p>
+                  </div>
+                  <div class="service-meta">
+                    <strong>₹1,499</strong>
+                    <button>Book</button>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="booking" class="booking section-shell alt-bg">
+        <div class="container booking-grid">
+          <div class="booking-copy">
+            <span class="eyebrow">Book with ease</span>
+            <h2>Reserve your preferred service in minutes</h2>
+            <p>
+              Choose the service, pick your preferred date and time, and we’ll send the
+              booking details directly to WhatsApp for a fast confirmation.
+            </p>
+            <ul class="check-list">
+              <li>Instant WhatsApp confirmation</li>
+              <li>Professional care and hygiene</li>
+              <li>Flexible appointment slots</li>
+            </ul>
+          </div>
+
+          <form id="bookingForm" class="booking-form">
+            <div class="booking-step">1. Choose category</div>
+            <div class="category-picker" aria-label="Salon service categories">
+              <button type="button" class="category-chip active" data-category="Men's">Men's</button>
+              <button type="button" class="category-chip" data-category="Women's">Women's</button>
+              <button type="button" class="category-chip" data-category="Hair colour & treatments">Hair</button>
+              <button type="button" class="category-chip" data-category="Skin">Skin</button>
+              <button type="button" class="category-chip" data-category="Wax">Wax</button>
+            </div>
+
+            <div class="input-group">
+              <label for="name">Full name</label>
+              <input id="name" name="name" type="text" placeholder="Enter your name" required />
+            </div>
+
+            <div class="input-group">
+              <label for="phone">Phone number</label>
+              <input
+                id="phone"
+                name="phone"
+                type="tel"
+                inputmode="numeric"
+                pattern="\+91[0-9]{10}"
+                maxlength="13"
+                placeholder="+91 9876543210"
+                value="+91"
+                title="Enter +91 followed by exactly 10 digits"
+                required
+              />
+            </div>
+
+            <div class="input-row">
+              <div class="input-group">
+                <label for="category">Category</label>
+                <select id="category" name="category">
+                  <option value="">Select category</option>
+                  <option value="Men's">Men's</option>
+                  <option value="Women's">Women's</option>
+                  <option value="Hair colour & treatments">Hair colour & treatments</option>
+                  <option value="Hair wash & spa">Hair wash & spa</option>
+                  <option value="Skin">Skin</option>
+                  <option value="Nail">Nail</option>
+                  <option value="Aesthetic treatments">Aesthetic treatments</option>
+                  <option value="Wax">Wax</option>
+                </select>
+              </div>
+
+              <div class="input-group">
+                <label for="service">Service</label>
+                <select id="service" name="service">
+                  <option value="">Select a service</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="input-row">
+              <div class="input-group">
+                <label for="date">Preferred date</label>
+                <select id="date" name="date" required>
+                  <option value="">Select a date</option>
+                </select>
+              </div>
+
+              <div class="input-group">
+                <label for="time">Preferred time</label>
+                <select id="time" name="time" required>
+                  <option value="">Select a time slot</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="summary-box">
+              <div>
+                <span>Selected service</span>
+                <strong id="summaryService">Not selected</strong>
+              </div>
+              <div>
+                <span>Estimated total</span>
+                <strong id="summaryPrice">₹0</strong>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary full-width big-btn">
+              Send booking to WhatsApp
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <section id="reviews" class="reviews section-shell">
+        <div class="container">
+          <div class="section-heading center">
+            <span class="eyebrow">Client love</span>
+            <h2>Reviews from our happy clients</h2>
+          </div>
+
+          <div class="review-grid">
+            <article class="review-card">
+              <div class="stars">★★★★★</div>
+              <p>
+                “The haircut and beard trim were perfect. Staff were polite, and the salon felt
+                very professional and premium.”
+              </p>
+              <div class="reviewer">
+                <strong>Rahul S.</strong>
+                <span>Men's grooming</span>
+              </div>
+            </article>
+
+            <article class="review-card">
+              <div class="stars">★★★★★</div>
+              <p>
+                “Loved the hair spa and glow facial treatment. My skin looked fresh and healthy, and
+                the service was very gentle.”
+              </p>
+              <div class="reviewer">
+                <strong>Priya M.</strong>
+                <span>Skin care</span>
+              </div>
+            </article>
+
+            <article class="review-card">
+              <div class="stars">★★★★★</div>
+              <p>
+                “I booked my wax appointment via WhatsApp, and the entire process was smooth and fast.
+                Highly recommended for quality service.”
+              </p>
+              <div class="reviewer">
+                <strong>Neha R.</strong>
+                <span>Wax & grooming</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact section-shell alt-bg">
+        <div class="container contact-grid">
+          <div class="contact-card">
+            <span class="eyebrow">Visit us</span>
+            <h2>Find the salon</h2>
+            <ul class="contact-list">
+              <li>
+                <strong>Address:</strong>
+                <span>28/C, Shyama Prasad Mukherjee Rd, near Jatin Das Park Metro Gate No. 3, Kolkata</span>
+              </li>
+              <li>
+                <strong>Phone:</strong>
+                <a href="tel:+919038440194">+91 90384 40194</a>
+              </li>
+              <li>
+                <strong>Instagram:</strong>
+                <a href="https://www.instagram.com/trendandtressessalon/?hl=en" target="_blank" rel="noreferrer">@trendandtressessalon</a>
+              </li>
+              <li>
+                <strong>Hours:</strong>
+                <span>Mon-Sat: 10:30 AM - 8:30 PM</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="map-wrap">
+            <iframe
+              title="Salon location map"
+              src="https://www.google.com/maps?q=28%2FC%20Shyama%20Prasad%20Mukherjee%20Rd%20near%20Jatin%20Das%20Park%20Metro%20Gate%20No.%203%20Kolkata&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>© 2026 Trend and Tresses Salon. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="tel:+919038440194">Call</a>
+          <a href="https://www.instagram.com/trendandtressessalon/?hl=en" target="_blank" rel="noreferrer">Instagram</a>
+          <a href="#booking">Book</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
